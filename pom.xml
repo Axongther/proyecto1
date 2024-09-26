@@ -8,10 +8,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <spring.boot.version>2.7.5</spring.boot.version>
-        <h2.version>2.1.214</h2.version> <!-- Define H2 version here -->
     </properties>
 
     <dependencyManagement>
@@ -64,11 +63,10 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- H2 Database (for testing purposes) -->
+        <!-- MySQL Connector -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2.version}</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
     </dependencies>

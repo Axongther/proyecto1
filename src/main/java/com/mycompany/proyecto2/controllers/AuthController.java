@@ -1,18 +1,19 @@
 package com.mycompany.proyecto2.controllers;
 
-import com.mycompany.proyecto2.models.User;
-import com.mycompany.proyecto2.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.mycompany.proyecto2.models.User;
+import com.mycompany.proyecto2.repositories.UsuarioRepository;
+
 @Controller
 public class AuthController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UsuarioRepository userRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
